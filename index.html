@@ -1,0 +1,132 @@
+<?php
+if($_POST["message"]) {
+    mail("laurin.liu@gmail.com", "Form to email message", $_POST["message"], "From: an@email.address");
+}
+?>
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>laurinliu.ca</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=News+Cycle" rel="stylesheet"> 
+
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar w3-white w3-wide w3-padding-8 w3-card-2">
+    <li>
+      <a href="#home" class="w3-margin-left"><b>HUMAN RIGHTS</b> PRACTITIONER</a>
+    </li>
+    <!-- Float links to the right. Hide them on small screens -->
+    <li class="w3-right w3-hide-small">
+      <a href="#projects" class="w3-left">Articles</a>
+      <a href="#about" class="w3-left">About</a>
+      <a href="#contact" class="w3-left w3-margin-right">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<!-- Header -->
+
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="img/innermongolia.JPG" alt="Architecture" width="1500" height="800">
+
+
+<!-- Social Media Icons -->
+
+<!--    <p> <div class="w3-display-middle w3-margin-top w3-center">
+      <a href="http://twitter.com"><i class="fa fa-twitter fa-2x"> </i> </a>
+      <a href="http://facebook.com"><i class="fa fa-facebook-square fa-2x"> </i> </a>
+      <a href="http://facebook.com"><i class="fa fa-linkedin-square fa-2x"> </i> </a>
+  </div> </p> -->
+
+  <!-- Name -->
+
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge"><span class="w3-border w3-border-black w3-padding">LAURIN</span> <span class="w3-hide-small">LIU</span></h1>
+  </div>
+
+
+
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Articles</h3>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding">
+          <a href="http://www.nationalnewswatch.com/2016/10/26/canadas-treatment-of-migrants-not-as-rosy-as-it-may-seem/#.WEL2I5Lw2Id" target="_blank"><p><b>National Newswatch</b></p><p>Canada's Treatment of Migrants Not as Rosy as It May Seem</p></a>
+        </div>
+        <a href="http://www.nationalnewswatch.com/2016/10/26/canadas-treatment-of-migrants-not-as-rosy-as-it-may-seem/#.WEL2I5Lw2Id">
+        <img src="img/rosy.JPG" alt="House" style="width:100%">
+        </a>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="http://montrealgazette.com/opinion/columnists/opinion-liberals-foreign-policy-has-yet-to-match-their-rhetoric" target="_blank"><p><b>Montreal Gazette</p></b> Liberals' foreign policy has yet to match their rhetoric</a></div>
+        <img src="/w3images/house2.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="http://www.samaracanada.com/samarablog/blog-post/samara-main-blog/2016/03/08/iwd2016-with-laurin-liu" target="_blank"><p><b>Samara</p></b>Celebrating International Women's Day with Laurin Liu</a></div>
+        <img src="/w3images/house3.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-display-container">
+        <div class="w3-display-topleft w3-black w3-padding"><a href="http://www.theglobeandmail.com/news/politics/laurin-liu-how-mps-can-fix-parliament/article8179984/" target="_blank"><p><b>Globe and Mail</p></b>How MPs can Fix Parliament</a></div>
+        <img src="/w3images/house4.jpg" alt="House" style="width:100%">
+      </div>
+    </div>
+  </div>
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">About</h3>
+    <p style="text-align:justify">I was a Canadian Member of Parliament for the New Democratic Party between 2011 and 2015, and have served in the shadow cabinet as deputy critic for the Environment, deputy critic for Science and Technology and deputy critic for International Trade. I  have tabled three bills and one motion, including legislation to protect unpaid interns and a bill to make enrolment in the Guaranteed Income Supplement automatic. I have initiated and carried out campaigns on consumer rights, poverty, employment and health. </p><p style="text-align:justify">I am currently pursuing a MSc in Human Rights at the London School of Economics and Political Science.</p>
+    </p>
+  </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-32" id="contact">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-12">Contact</h3>
+   
+    <form action="form.asp" target="_blank">
+      <input class="w3-input" type="text" placeholder="Name" required name="Name">
+      <input class="w3-input w3-section" type="text" placeholder="Email" required name="Email">
+      <input class="w3-input w3-section" type="text" placeholder="Subject" required name="Subject">
+      <input class="w3-input w3-section" type="text" placeholder="Comment" required name="Comment">
+      <button class="w3-btn w3-section" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="http://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+
+</body>
+</html>
